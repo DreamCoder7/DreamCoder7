@@ -27,7 +27,7 @@
 I am a Full Stack Developer from Ethiopia. Currently, I am pursuing my bachelor's degree in computer science at ACT - American College Of Technology. I have a passion for designing and creating things, notably with-code.
 
 - I’m working as a Software Engineer and contributing to frontend and backend for building web applications.
-- Expert web development services using forward technologies such as Gatsby, Nextjs, RESTAPI and GraphQl
+- Expert web development services using forward technologies such as React, Gatsby, RESTAPI and GraphQl
 - A Full Stack developer with years of experience building fast, lead-generating websites.
 - Help & support launching super fast, accessible, single page App that rank well on search engines.
 
