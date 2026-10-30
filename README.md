@@ -44,13 +44,40 @@
 
 <details open>
   <summary><strong>How I think about engineering ↗</strong></summary>
+
   <br />
 
-  <img
-    src="./assets/engineering.svg"
-    width="100%"
-    alt="Engineering principles"
-  />
+  <table>
+    <tr>
+      <td width="50%" valign="top">
+        <h3>Understand the problem</h3>
+        <p>
+          Ask the right questions before choosing the tools.
+        </p>
+      </td>
+      <td width="50%" valign="top">
+        <h3>Keep it simple</h3>
+        <p>
+          Build what’s needed. Question what adds unnecessary complexity.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td width="50%" valign="top">
+        <h3>Make change easier</h3>
+        <p>
+          Leave clear intent and code the next engineer can work with.
+        </p>
+      </td>
+      <td width="50%" valign="top">
+        <h3>Own the result</h3>
+        <p>
+          Shipping includes understanding what happens after release.
+        </p>
+      </td>
+    </tr>
+  </table>
+
 </details>
 
 <br />
