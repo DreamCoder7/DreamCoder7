@@ -1,205 +1,65 @@
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="1000" height="570" viewBox="0 0 1000 570"
-     role="img" aria-labelledby="title desc">
-
-  <title id="title">How I approach engineering</title>
-  <desc id="desc">
-    Four principles: understand the problem, simplify the solution,
-    make changes easier, and own the result after release.
-  </desc>
-
-  <defs>
-    <linearGradient id="bg" x2="1" y2="1">
-      <stop stop-color="#0D0D16"/>
-      <stop offset="1" stop-color="#161123"/>
-    </linearGradient>
-
-    <linearGradient id="accent">
-      <stop stop-color="#C4B5FD"/>
-      <stop offset="1" stop-color="#67E8F9"/>
-    </linearGradient>
-
-    <pattern id="dots" width="22" height="22"
-             patternUnits="userSpaceOnUse">
-      <circle cx="1" cy="1" r=".7" fill="#FFFFFF" opacity=".06"/>
-    </pattern>
-  </defs>
+     width="960" height="300" viewBox="0 0 960 300">
 
   <style>
-    .heading {
-      font: 700 27px system-ui, sans-serif;
-      fill: #F4F4F5;
-      letter-spacing: -.7px;
+    .box {
+      fill: none;
+      stroke: #52525b;
+      stroke-width: 1;
     }
 
-    .eyebrow {
-      font: 11px ui-monospace, monospace;
-      letter-spacing: 2px;
-      fill: #A1A1AA;
-    }
-
-    .card-title {
-      font: 650 21px system-ui, sans-serif;
-      fill: #F4F4F5;
-      letter-spacing: -.4px;
+    .title {
+      font: 600 17px system-ui, sans-serif;
+      fill: #c4b5fd;
     }
 
     .body {
       font: 15px system-ui, sans-serif;
-      fill: #A1A1B5;
-    }
-
-    .number {
-      font: 12px ui-monospace, monospace;
-      fill: #71717A;
-    }
-
-    .card {
-      fill: #FFFFFF;
-      fill-opacity: .025;
-      stroke: #FFFFFF;
-      stroke-opacity: .09;
-    }
-
-    .icon {
-      fill: none;
-      stroke-width: 1.7;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .signal {
-      animation: signal 5s ease-in-out infinite;
-    }
-
-    .s2 { animation-delay: 1.25s; }
-    .s3 { animation-delay: 2.5s; }
-    .s4 { animation-delay: 3.75s; }
-
-    @keyframes signal {
-      0%, 70%, 100% { opacity: .3; }
-      25%, 40% { opacity: 1; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      .signal { animation: none; opacity: 1; }
+      fill: #a1a1aa;
     }
   </style>
 
-  <!-- Canvas -->
-  <rect width="1000" height="570" rx="22" fill="url(#bg)"/>
-  <rect width="1000" height="570" rx="22" fill="url(#dots)"/>
+  <!-- Understand -->
+  <path class="box"
+        d="M32 30H48 M264 30H464V132H32V30"/>
 
-  <!-- Heading -->
-  <rect x="36" y="35" width="24" height="3" rx="1.5"
-        fill="url(#accent)"/>
-  <text x="72" y="41" class="eyebrow">THE WAY I WORK</text>
-  <text x="36" y="83" class="heading">
-    A few principles behind the code.
+  <text x="60" y="36" class="title">Understand the problem</text>
+
+  <text x="52" y="72" class="body">
+    <tspan x="52">Ask the right questions before</tspan>
+    <tspan x="52" dy="24">choosing the tools.</tspan>
   </text>
 
-  <!-- Card 01 -->
-  <g transform="translate(36 112)">
-    <rect width="452" height="195" rx="15" class="card"/>
+  <!-- Simplify -->
+  <path class="box"
+        d="M496 30H512 M644 30H928V132H496V30"/>
 
-    <rect x="22" y="22" width="42" height="42" rx="12"
-          fill="#C4B5FD" fill-opacity=".09"/>
+  <text x="524" y="36" class="title">Keep it simple</text>
 
-    <g transform="translate(32 32)" class="icon" stroke="#C4B5FD">
-      <circle cx="10" cy="10" r="7"/>
-      <path d="m15.5 15.5 5 5"/>
-      <path d="M10 7v6M7 10h6"/>
-    </g>
+  <text x="516" y="72" class="body">
+    <tspan x="516">Build what’s needed. Question what</tspan>
+    <tspan x="516" dy="24">adds unnecessary complexity.</tspan>
+  </text>
 
-    <text x="410" y="43" class="number">01</text>
-    <rect x="85" y="41" width="290" height="1"
-          fill="#C4B5FD" class="signal"/>
+  <!-- Maintain -->
+  <path class="box"
+        d="M32 174H48 M234 174H464V276H32V174"/>
 
-    <text x="22" y="99" class="card-title">
-      Understand before building.
-    </text>
+  <text x="60" y="180" class="title">Make change easier</text>
 
-    <text x="22" y="130" class="body">
-      <tspan x="22">Who needs this? What matters most?</tspan>
-      <tspan x="22" dy="24">The answers should shape the solution.</tspan>
-    </text>
-  </g>
+  <text x="52" y="216" class="body">
+    <tspan x="52">Leave clear intent and code the</tspan>
+    <tspan x="52" dy="24">next engineer can work with.</tspan>
+  </text>
 
-  <!-- Card 02 -->
-  <g transform="translate(512 112)">
-    <rect width="452" height="195" rx="15" class="card"/>
+  <!-- Own -->
+  <path class="box"
+        d="M496 174H512 M658 174H928V276H496V174"/>
 
-    <rect x="22" y="22" width="42" height="42" rx="12"
-          fill="#67E8F9" fill-opacity=".09"/>
+  <text x="524" y="180" class="title">Own the result</text>
 
-    <g transform="translate(32 32)" class="icon" stroke="#67E8F9">
-      <path d="M2 4h18M5 11h12M8 18h6"/>
-    </g>
-
-    <text x="410" y="43" class="number">02</text>
-    <rect x="85" y="41" width="290" height="1"
-          fill="#67E8F9" class="signal s2"/>
-
-    <text x="22" y="99" class="card-title">
-      Keep the solution simple.
-    </text>
-
-    <text x="22" y="130" class="body">
-      <tspan x="22">Every dependency and abstraction has a cost.</tspan>
-      <tspan x="22" dy="24">Add it when the problem earns it.</tspan>
-    </text>
-  </g>
-
-  <!-- Card 03 -->
-  <g transform="translate(36 327)">
-    <rect width="452" height="195" rx="15" class="card"/>
-
-    <rect x="22" y="22" width="42" height="42" rx="12"
-          fill="#A7F3D0" fill-opacity=".09"/>
-
-    <g transform="translate(32 32)" class="icon" stroke="#A7F3D0">
-      <path d="M6 5v12M6 11h8a4 4 0 0 0 4-4V5"/>
-      <circle cx="6" cy="3" r="2"/>
-      <circle cx="6" cy="19" r="2"/>
-      <circle cx="18" cy="3" r="2"/>
-    </g>
-
-    <text x="410" y="43" class="number">03</text>
-    <rect x="85" y="41" width="290" height="1"
-          fill="#A7F3D0" class="signal s3"/>
-
-    <text x="22" y="99" class="card-title">
-      Make change easier.
-    </text>
-
-    <text x="22" y="130" class="body">
-      <tspan x="22">Clear intent. Understandable boundaries.</tspan>
-      <tspan x="22" dy="24">Code the next engineer can work with.</tspan>
-    </text>
-  </g>
-
-  <!-- Card 04 -->
-  <g transform="translate(512 327)">
-    <rect width="452" height="195" rx="15" class="card"/>
-
-    <rect x="22" y="22" width="42" height="42" rx="12"
-          fill="#FDE68A" fill-opacity=".09"/>
-
-    <g transform="translate(32 32)" class="icon" stroke="#FDE68A">
-      <path d="M0 11h5l3-7 5 15 3-8h6"/>
-    </g>
-
-    <text x="410" y="43" class="number">04</text>
-    <rect x="85" y="41" width="290" height="1"
-          fill="#FDE68A" class="signal s4"/>
-
-    <text x="22" y="99" class="card-title">
-      Own what happens next.
-    </text>
-
-    <text x="22" y="130" class="body">
-      <tspan x="22">Release. Observe. Investigate. Improve.</tspan>
-      <tspan x="22" dy="24">Production is part of the engineering.</tspan>
-    </text>
-  </g>
+  <text x="516" y="216" class="body">
+    <tspan x="516">Shipping includes understanding</tspan>
+    <tspan x="516" dy="24">what happens after release.</tspan>
+  </text>
 </svg>
