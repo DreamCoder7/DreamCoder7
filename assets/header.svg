@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440"
+     viewBox="0 0 1200 440" role="img"
+     aria-labelledby="title desc">
+  <title id="title">Abreham Nigussie — Senior Full-Stack Engineer</title>
+  <desc id="desc">
+    Animated gradient lettering with floating orbital lines.
+  </desc>
+
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#09090f"/>
+      <stop offset="1" stop-color="#151126"/>
+    </linearGradient>
+
+    <linearGradient id="text" x1="0" x2="1">
+      <stop stop-color="#fafafa"/>
+      <stop offset=".45" stop-color="#c4b5fd"/>
+      <stop offset="1" stop-color="#67e8f9"/>
+    </linearGradient>
+
+    <radialGradient id="glow">
+      <stop stop-color="#8b5cf6" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="grid" width="48" height="48"
+             patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none"
+            stroke="#ffffff" stroke-opacity=".035"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .name {
+      font: 800 86px system-ui, -apple-system, sans-serif;
+      letter-spacing: -5px;
+    }
+
+    .label {
+      font: 12px ui-monospace, monospace;
+      letter-spacing: 4px;
+    }
+
+    .subtitle {
+      font: 400 22px system-ui, sans-serif;
+      letter-spacing: .5px;
+    }
+
+    .orbit {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: rotate 24s linear infinite;
+    }
+
+    .reverse {
+      animation-direction: reverse;
+      animation-duration: 32s;
+    }
+
+    .ambient {
+      animation: breathe 7s ease-in-out infinite alternate;
+    }
+
+    .intro {
+      animation: enter 1.2s ease-out both;
+    }
+
+    .delayed {
+      animation-delay: .2s;
+    }
+
+    .cursor {
+      animation: blink 1.4s step-end infinite;
+    }
+
+    .trace {
+      stroke-dasharray: 110 1100;
+      animation: trace 9s linear infinite;
+    }
+
+    @keyframes rotate {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes breathe {
+      from { opacity: .45; transform: translate(0, 0); }
+      to { opacity: 1; transform: translate(-30px, 15px); }
+    }
+
+    @keyframes enter {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    @keyframes trace {
+      to { stroke-dashoffset: -1210; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .orbit, .ambient, .intro, .cursor, .trace {
+        animation: none;
+      }
+    }
+  </style>
+
+  <rect width="1200" height="440" rx="24" fill="url(#background)"/>
+  <rect width="1200" height="440" rx="24" fill="url(#grid)"/>
+
+  <circle class="ambient" cx="960" cy="190" r="310"
+          fill="url(#glow)"/>
+
+  <g fill="none" stroke-width="1">
+    <circle cx="1010" cy="210" r="125" stroke="#a78bfa"
+            stroke-opacity=".15"/>
+    <circle cx="1010" cy="210" r="170" stroke="#67e8f9"
+            stroke-opacity=".1"/>
+
+    <g class="orbit">
+      <ellipse cx="1010" cy="210" rx="165" ry="72"
+               stroke="#a78bfa" stroke-opacity=".45"/>
+      <circle cx="1175" cy="210" r="5"
+              fill="#c4b5fd" stroke="none"/>
+    </g>
+
+    <g class="orbit reverse">
+      <ellipse cx="1010" cy="210" rx="100" ry="166"
+               stroke="#67e8f9" stroke-opacity=".3"/>
+      <circle cx="1010" cy="44" r="4"
+              fill="#67e8f9" stroke="none"/>
+    </g>
+  </g>
+
+  <g class="intro">
+    <rect x="60" y="62" width="7" height="7" rx="2"
+          fill="#a78bfa"/>
+    <text x="82" y="72" class="label" fill="#a1a1aa">
+      DREAMCODER
+    </text>
+
+    <text x="56" y="182" class="name" fill="url(#text)">
+      Abreham
+    </text>
+    <text x="56" y="273" class="name" fill="url(#text)">
+      Nigussie.
+    </text>
+  </g>
+
+  <g class="intro delayed">
+    <text x="61" y="326" class="subtitle" fill="#d4d4d8">
+      Senior Full-Stack Engineer
+    </text>
+    <rect class="cursor" x="389" y="307"
+          width="3" height="24" fill="#a78bfa"/>
+  </g>
+
+  <path d="M60 368H1140" stroke="#ffffff" stroke-opacity=".09"/>
+  <path class="trace" d="M60 368H1140"
+        stroke="#a78bfa" stroke-opacity=".8"/>
+
+  <text x="61" y="404" class="label" fill="#71717a">
+    IDEAS → SYSTEMS → PRODUCTS
+  </text>
+</svg>
