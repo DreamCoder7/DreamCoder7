@@ -45,39 +45,24 @@
 <details open>
   <summary><strong>How I think about engineering ↗</strong></summary>
 
-  <br />
-
-  <table>
-    <tr>
-      <td width="50%" valign="top">
-        <h3>Understand the problem</h3>
-        <p>
-          Ask the right questions before choosing the tools.
-        </p>
-      </td>
-      <td width="50%" valign="top">
-        <h3>Keep it simple</h3>
-        <p>
-          Build what’s needed. Question what adds unnecessary complexity.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td width="50%" valign="top">
-        <h3>Make change easier</h3>
-        <p>
-          Leave clear intent and code the next engineer can work with.
-        </p>
-      </td>
-      <td width="50%" valign="top">
-        <h3>Own the result</h3>
-        <p>
-          Shipping includes understanding what happens after release.
-        </p>
-      </td>
-    </tr>
-  </table>
-
+  <ul>
+    <li>
+      <strong>Understand the problem.</strong>
+      Ask the right questions before choosing the tools.
+    </li>
+    <li>
+      <strong>Keep it simple.</strong>
+      Build what’s needed and question unnecessary complexity.
+    </li>
+    <li>
+      <strong>Make change easier.</strong>
+      Write clear code the next engineer can work with.
+    </li>
+    <li>
+      <strong>Own the result.</strong>
+      Shipping includes understanding what happens after release.
+    </li>
+  </ul>
 </details>
 
 <br />
