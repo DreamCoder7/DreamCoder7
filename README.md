@@ -42,33 +42,85 @@
 
 <br />
 
-<details>
+<details open>
   <summary><strong>How I think about engineering ↗</strong></summary>
+
   <br />
 
-  <p>
-    <strong>Understand the problem before choosing the tools.</strong><br />
-    The requirements should shape the architecture.
-    Familiar tools are a starting point, not a constraint.
-  </p>
+  <table>
+    <tr>
+      <td width="50%" valign="top">
+        <img
+          src="https://img.shields.io/badge/01-UNDERSTAND-C4B5FD?style=flat-square&labelColor=18181B"
+          alt="01 — Understand"
+        />
 
-  <p>
-    <strong>Make the next change easier.</strong><br />
-    Good code helps the next person understand what it does,
-    why it exists, and where to make a change.
-  </p>
+        <h3>Start with the problem.</h3>
 
-  <p>
-    <strong>Own what happens after release.</strong><br />
-    Shipping includes knowing whether the feature works,
-    recognizing when it fails, and being able to investigate.
-  </p>
+        <p>
+          Understand who needs it, what matters,
+          and what could go wrong.
+          Choose the tools after that.
+        </p>
 
-  <p>
-    <strong>Know what not to build.</strong><br />
-    Sometimes the best engineering decision is a smaller feature,
-    a simpler design, or one less moving part.
-  </p>
+        <sub>CONTEXT BEFORE CODE</sub>
+      </td>
+
+      <td width="50%" valign="top">
+        <img
+          src="https://img.shields.io/badge/02-SIMPLIFY-67E8F9?style=flat-square&labelColor=18181B"
+          alt="02 — Simplify"
+        />
+
+        <h3>Leave fewer moving parts.</h3>
+
+        <p>
+          Build what the product needs.
+          Question the abstraction, dependency,
+          or service that adds more than it solves.
+        </p>
+
+        <sub>COMPLEXITY HAS A COST</sub>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="50%" valign="top">
+        <img
+          src="https://img.shields.io/badge/03-MAINTAIN-A7F3D0?style=flat-square&labelColor=18181B"
+          alt="03 — Maintain"
+        />
+
+        <h3>Make the next change easier.</h3>
+
+        <p>
+          Write for the engineer who comes next.
+          Make the intent clear and the boundaries
+          easy to understand.
+        </p>
+
+        <sub>CLARITY COMPOUNDS</sub>
+      </td>
+
+      <td width="50%" valign="top">
+        <img
+          src="https://img.shields.io/badge/04-OWN-FDE68A?style=flat-square&labelColor=18181B"
+          alt="04 — Own"
+        />
+
+        <h3>Stay responsible after release.</h3>
+
+        <p>
+          Know whether it works for users.
+          Make failures visible, investigate them,
+          and bring what you learn into the next change.
+        </p>
+
+        <sub>DELIVERY INCLUDES PRODUCTION</sub>
+      </td>
+    </tr>
+  </table>
+
 </details>
 
 <br />
