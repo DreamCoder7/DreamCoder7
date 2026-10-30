@@ -43,16 +43,13 @@
 <br />
 
 <details open>
-  <summary>
-    <strong>How I think about engineering ↗</strong>
-  </summary>
-
+  <summary><strong>How I think about engineering ↗</strong></summary>
   <br />
 
   <img
     src="./assets/engineering.svg"
     width="100%"
-    alt="My engineering principles: understand the problem, simplify the solution, make changes easier, and own production."
+    alt="Engineering principles"
   />
 </details>
 
