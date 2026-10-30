@@ -43,29 +43,32 @@
 <br />
 
 <details>
-  <summary><strong>A little more about my work ↗</strong></summary>
+  <summary><strong>How I think about engineering ↗</strong></summary>
   <br />
 
-  <ul>
-    <li>
-      Architected and maintained a configurable multi-tenant
-      white-label platform.
-    </li>
-    <li>
-      Introduced micro-frontends and a monorepo to improve
-      code reuse across teams.
-    </li>
-    <li>
-      Built distributed services, API integrations,
-      and asynchronous communication.
-    </li>
-    <li>
-      Implemented production observability and error tracking.
-    </li>
-    <li>
-      Built listing and booking flows for homes, cars, and tours.
-    </li>
-  </ul>
+  <p>
+    <strong>Understand the problem before choosing the tools.</strong><br />
+    The requirements should shape the architecture.
+    Familiar tools are a starting point, not a constraint.
+  </p>
+
+  <p>
+    <strong>Make the next change easier.</strong><br />
+    Good code helps the next person understand what it does,
+    why it exists, and where to make a change.
+  </p>
+
+  <p>
+    <strong>Own what happens after release.</strong><br />
+    Shipping includes knowing whether the feature works,
+    recognizing when it fails, and being able to investigate.
+  </p>
+
+  <p>
+    <strong>Know what not to build.</strong><br />
+    Sometimes the best engineering decision is a smaller feature,
+    a simpler design, or one less moving part.
+  </p>
 </details>
 
 <br />
